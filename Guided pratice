@@ -1,0 +1,46 @@
+# what does this function return ? this function returns nothing. But it prints (displays) what the answer is for whatever y equals.
+def print_only(x):
+   y = x * 2
+   print y
+
+# how is this one different ? this one returns back to the computer wgatever y eqals and does not print what is returned.
+def return_only(x):
+   y = x * 2
+   return y
+
+#This displays 14 because in the beginning "print only" is declared as x*2 so the number 7 in print only is plugging in for x and displaying 7*2 which is 14.
+print "running print_only ..."
+print_only(7)
+
+#Whatever the answer is will not be displayed only thing that will show is "runninh return_only" because that is the only thing being print and return is goinh back to the computer.
+print "running return_only ..."
+return_only(7)
+
+#This displays 14 because in the beginning "print only" is declared as x*2 so the number 7 in print only is plugging in for x and displaying 7*2 which is 14.
+print "printing print_only ..."
+print print_only(7)
+
+#Although there is a return in this function there is also a print which means 14 will be dispayed and also returned back to the computer.
+print "printing return_only ..."
+print return_only(7)
+
+#This will say 14 and than eroor because you can not add "+" in a print
+print "using print_only ..."
+print_only(7) + 6
+
+#This will say "using returm_only" because whatever is being plugged in is being returned to the computer
+print "using return_only ..."
+return_only(7) + 6
+
+
+#this will print 10 because 2 squared is 4 plus 3 is 7 plus another 3 is 10.
+def square(x):
+    return x*x
+
+def g(y):
+    return y + 3
+
+def h(y):
+    return square(y) + 3
+
+print g(h(2))
